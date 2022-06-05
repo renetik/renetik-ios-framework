@@ -15,7 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/rene-dohan/renetik-library-ios", branch: "master"),
-	.package(url: "https://github.com/rene-dohan/renetik-ios-layout", branch: "master"),
+        .package(url: "https://github.com/rene-dohan/renetik-ios-layout", branch: "master"),
     ],
     targets: [
         .target(
