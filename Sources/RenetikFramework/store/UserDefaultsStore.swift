@@ -2,9 +2,6 @@
 // Created by Rene Dohan on 31/05/22.
 //
 
-import Foundation
-import Renetik
-
 class UserDefaultsStore: CSStore, Sequence {
 
     let defaults = UserDefaults.standard
@@ -25,7 +22,7 @@ class UserDefaultsStore: CSStore, Sequence {
     func get(key: String) -> String? { defaults.string(forKey: key) }
 
     func set(key: String, value: [String: CSAnyProtocol]?) {
-        set(key: key, value: value?.toJsonString(formatted: isDebug))
+        set(key: key, value: value?.toJsonString(formatted: CSLang.isDebug))
     }
 
     func getMap(key: String) -> [String: CSAnyProtocol]? {
@@ -33,7 +30,7 @@ class UserDefaultsStore: CSStore, Sequence {
     }
 
     func set(key: String, value: [CSAnyProtocol]?) {
-        set(key: key, value: value?.toJsonString(formatted: isDebug))
+        set(key: key, value: value?.toJsonString(formatted: CSLang.isDebug))
     }
 
     func getArray(key: String) -> [CSAnyProtocol]? {
@@ -41,7 +38,7 @@ class UserDefaultsStore: CSStore, Sequence {
     }
 
     func set<T>(key: String, value: T?) where T: CSJsonObject {
-        set(key: key, value: value?.toJsonString(formatted: isDebug))
+        set(key: key, value: value?.toJsonString(formatted: CSLang.isDebug))
     }
 
     func getJsonObject<T>(key: String, type: T.Type) -> T? where T: CSJsonObject {

@@ -6,7 +6,12 @@ public let navigation: CSNavigationController = delegate.navigation
 
 open class CSApplicationDelegate: UIResponder, UIApplicationDelegate {
 
-    public var navigation: CSNavigationController!
+    public var navigation: CSNavigationController! {
+        didSet {
+            Renetik.navigation = navigation
+        }
+    }
+    
     public var window: UIWindow?
     
     // ViewController orientation change not called, but this yes for landscape left/right
