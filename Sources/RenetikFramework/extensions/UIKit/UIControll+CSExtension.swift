@@ -15,7 +15,6 @@ public extension UIControl {
     @objc func onTouchUp(_ block: @escaping Func) -> Self {
         interaction(enabled: true)
         addEventHandler(controlEvents: .touchUpInside) { block() }
-//        bk_addEventHandler({ _ in block() }, for: .touchUpInside)
         return self
     }
 
@@ -23,7 +22,6 @@ public extension UIControl {
     @objc func onTouchDown(_ block: @escaping Func) -> Self {
         interaction(enabled: true)
         addEventHandler(controlEvents: .touchDown) { block() }
-//        bk_addEventHandler({ _ in block() }, for: .touchDown)
         return self
     }
 
