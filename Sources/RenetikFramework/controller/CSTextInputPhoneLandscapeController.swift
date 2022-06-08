@@ -4,7 +4,7 @@
 //
 
 import UIKit
-import Renetik
+import RenetikCore
 
 //import UITextView_Placeholder
 

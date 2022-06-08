@@ -1,5 +1,5 @@
 import UIKit
-import Renetik
+import RenetikCore
 
 var delegate: CSApplicationDelegate!
 public let navigation: CSNavigationController = delegate.navigation

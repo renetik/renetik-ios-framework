@@ -1,5 +1,5 @@
 import UIKit
-import Renetik
+import RenetikCore
 import RenetikLayout
 
 public typealias CSTabBarPagerControllerItem = (item: UITabBarItem, onClick: (@escaping (UIViewController) -> Void) -> Void)

@@ -3,7 +3,7 @@
 //
 
 import UIKit
-import Renetik
+import RenetikCore
 
 public protocol CSResponseProtocol: NSObjectProtocol {
     var message: String { get }

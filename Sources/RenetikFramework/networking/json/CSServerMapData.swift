@@ -1,4 +1,4 @@
-import Renetik
+import RenetikCore
 
 open class CSServerMapData: CSJsonObject, CSHttpResponseDataProtocol {
     static let PARSING_FAILED = "Parsing data as json failed"

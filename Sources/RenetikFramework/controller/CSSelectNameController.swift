@@ -1,5 +1,5 @@
 import UIKit
-import Renetik
+import RenetikCore
 
 public typealias CSNameRowType = CSNameProtocol & CustomStringConvertible & Equatable
 

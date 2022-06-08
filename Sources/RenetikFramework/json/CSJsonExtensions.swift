@@ -1,5 +1,5 @@
 import Foundation
-import Renetik
+import RenetikCore
 
 extension String {
     func parseJsonDictionary() -> [String: CSAnyProtocol?]? { parseJson() as? [String: CSAnyProtocol?] }
