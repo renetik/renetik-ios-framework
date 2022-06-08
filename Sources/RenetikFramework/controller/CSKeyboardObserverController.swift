@@ -55,7 +55,8 @@ public class CSKeyboardObserver {
 
     @discardableResult
     public init(_ onKeyboardChange: ((_ keyboardHeight: CGFloat) -> Void)? = nil) {
-        self.onKeyboardChange = onKeyboardChange; registerEvents(navigation.topViewController as? CSViewController)
+        self.onKeyboardChange = onKeyboardChange
+        registerEvents(Renetik.navigation?.topViewController as? CSViewController)
     }
 
     private func registerEvents(_ parent: CSViewController? = nil) {

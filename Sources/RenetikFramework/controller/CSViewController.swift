@@ -151,7 +151,7 @@ open class CSViewController: UIViewController {
             if let controllerInNavigation = controllerInNavigation {
                 if isMovingFromParent == true && controllerInNavigation.parent == nil {
                     onViewDismissing()
-                } else if navigation.previous == controllerInNavigation {
+                } else if Renetik.navigation?.previous == controllerInNavigation {
                     onViewPushedOver()
                 }
             }

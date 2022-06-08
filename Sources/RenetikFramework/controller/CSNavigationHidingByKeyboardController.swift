@@ -26,21 +26,21 @@ public class CSNavigationHidingByKeyboardController: CSViewController {
     public func hideNavigationBar() {
         if navigationBarHidden { return }
         animate(duration: 0.5) {
-            navigation.navigationBar.bottom = delegate.window?.statusBarHeight ?? 0
-            navigation.last!.view.fill(top: navigation.navigationBar.bottom)
+            Renetik.navigation!.navigationBar.bottom = Renetik.delegate.window??.statusBarHeight ?? 0
+            Renetik.navigation!.last!.view.fill(top: Renetik.navigation!.navigationBar.bottom)
         }
-        navigation.navigationBar.fadeOut(duration: 0.7)
+        Renetik.navigation?.navigationBar.fadeOut(duration: 0.7)
         navigationBarHidden = true
     }
 
     public func showNavigationBar() {
         if !navigationBarHidden { return }
         animate(duration: 0.5) {
-            navigation.navigationBar.top = delegate.window?.statusBarHeight ?? 0
+            Renetik.navigation!.navigationBar.top = Renetik.delegate.window??.statusBarHeight ?? 0
 //            navigation.navigationBar.top = UIApplication.shared.statusBarFrame.height
-            navigation.last!.view.fill(top: navigation.navigationBar.bottom)
+            Renetik.navigation!.last!.view.fill(top: Renetik.navigation!.navigationBar.bottom)
         }
-        navigation.navigationBar.fadeIn(duration: 0.7)
+        Renetik.navigation!.navigationBar.fadeIn(duration: 0.7)
         navigationBarHidden = false
     }
 }

@@ -28,20 +28,20 @@ public class CSPickerController: CSViewController, CSPickerVisibleProtocol, UIPi
         self.items = items
         self.onDone = onDone
         self.onCancel = onCancel
-        let window = delegate.window!
+        let window = Renetik.delegate.window!
         UIApplication.resignFirstResponder() // Hide keyboard or whatever so it don't overlap our view
-        window.add(view: disablerView).matchParent()
+        Renetik.delegate.window??.add(view: disablerView).matchParent()
         layout(disablerView.add(view: pickerView).matchParentWidth()) {
             $0.heightToFit().from(bottom: 0)
         }
         layout(disablerView.add(view: toolBar).matchParentWidth()) {
             $0.heightToFit().from(self.pickerView, bottom: 0)
         }
-        window.layoutIfNeeded()
+        Renetik.delegate.window??.layoutIfNeeded()
         pickerView.selectRow(selectedIndex, inComponent: 0, animated: false)
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1,
                 initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-            window.layoutIfNeeded()
+            Renetik.delegate.window??.layoutIfNeeded()
             self.disablerView.alpha = 1
         })
         return self

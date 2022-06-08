@@ -72,7 +72,7 @@ public class CSTextInputPhoneLandscapeController: CSViewController {
         if parentTextInput.responder.isFirstResponder && UIScreen.isShort {
             textView.text = parentTextInput.text
             changeAccessory(from: hasAccessory, to: textView, textInput: textView)
-            delegate.window!.add(view: container).matchParent()
+            Renetik.delegate.window??.add(view: container).matchParent()
             textView.becomeFirstResponder()
             runLayoutFunctions()
             return

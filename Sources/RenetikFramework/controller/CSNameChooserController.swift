@@ -67,7 +67,7 @@ public class CSNameChooserController<RowType: CSNameRowType>: CSMainController
     public func tableView(_ tableView: UITableView,
                           didSelectRowAt path: IndexPath) {
         selectedName = filteredData[path.row]
-        navigation.popViewController()
+        Renetik.navigation?.popViewController()
         onSelected!(selectedName!)
     }
 
@@ -81,7 +81,7 @@ public class CSNameChooserController<RowType: CSNameRowType>: CSMainController
             let value = filteredData[path.row]
             onDelete?(value).onSuccess {
                 self.names.remove(value)
-                if self.names.isEmpty { navigation.popViewController() } else { self.reload() }
+                if self.names.isEmpty { Renetik.navigation?.popViewController() } else { self.reload() }
             }
         }
     }
