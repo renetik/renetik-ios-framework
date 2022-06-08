@@ -1,6 +1,2 @@
-//
-// Created by Rene Dohan on 6/12/20.
-//
-
-@_exported import Renetik
+@_exported import RenetikCore
 @_exported import RenetikLayout
