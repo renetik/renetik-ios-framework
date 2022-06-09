@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import RenetikLayout
 
 public class CSPickerController: CSViewController, CSPickerVisibleProtocol, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -22,13 +23,12 @@ public class CSPickerController: CSViewController, CSPickerVisibleProtocol, UIPi
 
     @discardableResult
     public func showPicker(from parent: UIViewController, title: String, items: [CustomStringConvertible],
-                           selected selectedIndex: Int, from displayElement: CSDisplayElement,
-                           onCancel: Func?, onDone: @escaping ArgFunc<Int>) -> CSPickerVisibleProtocol {
+        selected selectedIndex: Int, from displayElement: CSDisplayElement,
+        onCancel: Func?, onDone: @escaping ArgFunc<Int>) -> CSPickerVisibleProtocol {
         super.construct(parent).asViewLess()
         self.items = items
         self.onDone = onDone
         self.onCancel = onCancel
-        let window = Renetik.delegate.window!
         UIApplication.resignFirstResponder() // Hide keyboard or whatever so it don't overlap our view
         Renetik.delegate.window??.add(view: disablerView).matchParent()
         layout(disablerView.add(view: pickerView).matchParentWidth()) {
@@ -40,10 +40,10 @@ public class CSPickerController: CSViewController, CSPickerVisibleProtocol, UIPi
         Renetik.delegate.window??.layoutIfNeeded()
         pickerView.selectRow(selectedIndex, inComponent: 0, animated: false)
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1,
-                initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-            Renetik.delegate.window??.layoutIfNeeded()
-            self.disablerView.alpha = 1
-        })
+            initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+                Renetik.delegate.window??.layoutIfNeeded()
+                self.disablerView.alpha = 1
+            })
         return self
     }
 
@@ -98,7 +98,8 @@ public class CSPickerController: CSViewController, CSPickerVisibleProtocol, UIPi
                 pickerLabel.border(width: width, color: color, radius: radius)
             }
         }
-        return UIView.wrap(view: pickerLabel).content(padding: (horizontal: 8, vertical: 0))
+        return UIView.wrap(pickerLabel, horizontal: 8)
+//        return UIView.wrap(view: pickerLabel).content(padding: (horizontal: 8, vertical: 0))
     }
 
     public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -122,7 +123,7 @@ public class CSPickerController: CSViewController, CSPickerVisibleProtocol, UIPi
             self.disablerView.window!.layoutIfNeeded()
             self.disablerView.alpha = 0
         }, completion: {
-            self.disablerView.removeFromSuperview()
-        })
+                self.disablerView.removeFromSuperview()
+            })
     }
 }
