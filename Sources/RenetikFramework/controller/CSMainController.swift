@@ -9,7 +9,7 @@ open class CSMainController: CSViewController {
     public var parentMainController: CSMainController? = nil
     private var childMainControllers = [CSMainController]()
     private var menuItems = [CSMenuHeader]()
-    private lazy var menuDialog = { CSAlertDialogController(in: self) }()
+    private lazy var menuDialog = { CSAlertDialog(in: self) }()
 
     override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
