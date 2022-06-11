@@ -18,4 +18,4 @@ Renetik, [Website](https://renetik.github.io)
 ## Hire me ! or check out [Renetik Instruments](https://renetik.com)
 
 ## License
-Renetik Core is available under the MIT license. See the LICENSE file for more info.
+Renetik iOS Framework is available under the MIT license. See the LICENSE file for more info.
