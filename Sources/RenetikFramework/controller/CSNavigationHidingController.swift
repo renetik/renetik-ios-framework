@@ -29,7 +29,7 @@ public class CSNavigationHidingController: CSViewController {
 
     private func onKeyboardChange(keyboardHeight: CGFloat) {
         if !isAppearing { return }
-        if keyboardHeight > 0 && UIScreen.isLandscape {
+        if keyboardHeight > 0 && screen.isLandscape {
             requestNavigationBarHidden()
         }
         else {
@@ -38,7 +38,7 @@ public class CSNavigationHidingController: CSViewController {
     }
 
     public override func onViewVisibilityChanged(_ visible: Bool) {
-        isNavigationBarHidden = Renetik.navigation!.navigationBar.isHidden
+        isNavigationBarHidden = navigation!.navigationBar.isHidden
     }
 
     public override func onViewDismissing() {
@@ -87,7 +87,7 @@ public class CSNavigationHidingController: CSViewController {
     }
 
     public func requestNavigationBarHidden() {
-        if UIScreen.isUltraTall { return }
+        if screen.isUltraTall { return }
         lastDraggingContentOffset = nil
         if isNavigationBarHidden { return }
         shouldHide = false
@@ -102,11 +102,11 @@ public class CSNavigationHidingController: CSViewController {
     private func hideNavigationBar(animated: Bool = true) {
         isHidingRunning = true
         isNavigationBarHidden = true
-        invoke(animated: animated, operation: {
-            Renetik.navigation?.navigationBar.bottom = Renetik.delegate.window??.statusBarBottom ?? 0
-            self.parentController!.view.fill(top: Renetik.navigation?.navigationBar.bottom ?? 0)
-        }, completion: {
-            Renetik.navigation?.navigationBar.hide()
+        invoke(animated: animated, operation: { [unowned self] in
+            navigation?.navigationBar.bottom = window?.statusBarBottom ?? 0
+            self.parentController!.view.fill(top: navigation?.navigationBar.bottom ?? 0)
+        }, completion: { [unowned self] in
+            navigation?.navigationBar.hide()
             self.isHidingRunning = false
             if self.shouldShow { self.requestNavigationBarShown() }
         })
@@ -127,10 +127,10 @@ public class CSNavigationHidingController: CSViewController {
     private func showNavigationBar(animated: Bool = true) {
         isShowingRunning = true
         isNavigationBarHidden = false
-        Renetik.navigation?.navigationBar.show()
-        invoke(animated: animated, operation: {
-            Renetik.navigation?.navigationBar.top = Renetik.delegate.window??.statusBarBottom ?? 0
-            self.parentController!.view.fill(top: Renetik.navigation?.navigationBar.bottom ?? 0)
+        navigation?.navigationBar.show()
+        invoke(animated: animated, operation: { [unowned self] in
+            navigation?.navigationBar.top = window?.statusBarBottom ?? 0
+            self.parentController!.view.fill(top: navigation?.navigationBar.bottom ?? 0)
         }, completion: {
             self.isShowingRunning = false
             if self.shouldHide { self.requestNavigationBarHidden() }

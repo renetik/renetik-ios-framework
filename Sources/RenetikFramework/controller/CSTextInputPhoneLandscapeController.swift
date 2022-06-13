@@ -59,25 +59,25 @@ public class CSTextInputPhoneLandscapeController: CSViewController {
 
     override public func onCreateLayout() {
         layout(container.add(view: actionButton).centeredVertical()) { [unowned self] in
-            $0.from(right: safeArea.right)
+            $0.from(right: view.rightInset)
         }
         layout(container.add(view: textView).matchParentHeight(margin: 5)) { [unowned self] in
-            $0.from(left: safeArea.left).fill(right: 5, from: actionButton)
+            $0.from(left: view.leftInset).fill(right: 5, from: actionButton)
         }
     }
 
     override public func onViewDidLayout() { updateVisibility() }
 
     private func onKeyboardChange() {
-        if parentTextInput.responder.isFirstResponder && UIScreen.isShort {
+        if parentTextInput.responder.isFirstResponder && screen.isShort {
             textView.text = parentTextInput.text
             changeAccessory(from: hasAccessory, to: textView, textInput: textView)
-            Renetik.delegate.window??.add(view: container).matchParent()
+            window?.add(view: container).matchParent()
             textView.becomeFirstResponder()
             runLayoutFunctions()
             return
         }
-        if textView.isFirstResponder && UIScreen.isShort {
+        if textView.isFirstResponder && screen.isShort {
             container.fill(bottom: keyboardManager.keyboardHeight)
             runLayoutFunctions()
             return
@@ -86,7 +86,7 @@ public class CSTextInputPhoneLandscapeController: CSViewController {
     }
 
     private func updateVisibility() {
-        if !UIScreen.isShort && isActive { hide() }
+        if !screen.isShort && isActive { hide() }
         if !textView.isFirstResponder && isActive { hide() }
     }
 

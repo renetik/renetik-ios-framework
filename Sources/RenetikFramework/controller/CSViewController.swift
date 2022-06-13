@@ -28,7 +28,7 @@ open class CSViewController: UIViewController {
     private var eventRegistrations = CSArray<CSRegistration>()
     private var isShouldAutorotate: Bool? = nil
     private let layoutFunctions: CSEvent<Void> = event()
-    public private(set) weak var controllerInNavigation: UIViewController?
+//    public private(set) weak var controllerInNavigation: UIViewController?
     public private(set) weak var parentController: UIViewController? {
         didSet {
             (parentController as? CSViewController)
@@ -151,7 +151,7 @@ open class CSViewController: UIViewController {
             if let controllerInNavigation = controllerInNavigation {
                 if isMovingFromParent == true && controllerInNavigation.parent == nil {
                     onViewDismissing()
-                } else if Renetik.navigation?.previous == controllerInNavigation {
+                } else if navigation?.previous == controllerInNavigation {
                     onViewPushedOver()
                 }
             }
@@ -250,7 +250,8 @@ open class CSViewController: UIViewController {
     }
 
     func updateControllerInNavigation() {
-        if controllerInNavigation.isNil { controllerInNavigation = findControllerInNavigation() }
+        // TODO if controllerInNavigation will be optimized to cache localy this needs to update it
+//        if controllerInNavigation.isNil { controllerInNavigation = findControllerInNavigation() }
     }
 
     @discardableResult

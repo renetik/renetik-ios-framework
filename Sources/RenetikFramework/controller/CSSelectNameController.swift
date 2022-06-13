@@ -4,7 +4,7 @@ import RenetikCore
 public typealias CSNameRowType = CSNameProtocol & CustomStringConvertible & Equatable
 
 public class CSSelectNameController<Data: CSNameRowType>:
-        CSMainController, UITableViewDelegate, UITableViewDataSource {
+    CSMainController, UITableViewDelegate, UITableViewDataSource {
 
     public let table = UITableView.construct()
     public let search = CSSearchBarController()
@@ -48,36 +48,37 @@ public class CSSelectNameController<Data: CSNameRowType>:
     }
 
     public func tableView(_ tableView: UITableView,
-                          cellForRowAt path: IndexPath) -> UITableViewCell {
+        cellForRowAt path: IndexPath) -> UITableViewCell {
         tableView.cell(style: .default, onCreate: onCellCreate)
-                .also { $0.textLabel!.text = filteredData[path.row].name }
+            .also { $0.textLabel!.text = filteredData[path.row].name }
     }
 
     public func tableView(_ tableView: UITableView,
-                          numberOfRowsInSection section: Int) -> Int {
+        numberOfRowsInSection section: Int) -> Int {
         filteredData.count
     }
 
     public func tableView(_ tableView: UITableView,
-                          didSelectRowAt path: IndexPath) {
+        didSelectRowAt path: IndexPath) {
         selectedName = filteredData[path.row]
-        Renetik.navigation?.popViewController()
+        navigation?.popViewController()
         onSelected!(selectedName!)
     }
 
     public func tableView(_ tableView: UITableView,
-                          canEditRowAt path: IndexPath) -> Bool {
+        canEditRowAt path: IndexPath) -> Bool {
         onDelete.notNil
     }
 
     public func tableView(_ tableView: UITableView,
-                          commit editingStyle: UITableViewCell.EditingStyle,
-                          forRowAt path: IndexPath) {
+        commit editingStyle: UITableViewCell.EditingStyle,
+        forRowAt path: IndexPath) {
         if editingStyle == .delete {
             let value = filteredData[path.row]
-            onDelete?(value).onSuccess {
+            onDelete?(value).onSuccess { [unowned self] in
                 self.names.remove(value)
-                if self.names.isEmpty { Renetik.navigation?.popViewController() } else { self.reload() }
+                if self.names.isEmpty {
+                    navigation?.popViewController() } else { self.reload() }
             }
         }
     }

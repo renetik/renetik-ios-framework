@@ -16,8 +16,8 @@ public class CSKeyboardObserverController: CSViewController {
 
     @discardableResult
     public func construct(
-            _ parent: UIViewController,
-            _ onKeyboardChange: ((_ keyboardHeight: CGFloat) -> Void)? = nil) -> Self {
+        _ parent: UIViewController,
+        _ onKeyboardChange: ((_ keyboardHeight: CGFloat) -> Void)? = nil) -> Self {
         super.construct(parent).asViewLess()
         self.onKeyboardChange = onKeyboardChange
         observe(notification: UIResponder.keyboardDidShowNotification, callback: keyboardDidShow)
@@ -53,20 +53,20 @@ public class CSKeyboardObserver {
         self.onKeyboardChange = onKeyboardChange; registerEvents(parent)
     }
 
-    @discardableResult
-    public init(_ onKeyboardChange: ((_ keyboardHeight: CGFloat) -> Void)? = nil) {
-        self.onKeyboardChange = onKeyboardChange
-        registerEvents(Renetik.navigation?.topViewController as? CSViewController)
-    }
+//    @discardableResult
+//    public init(_ onKeyboardChange: ((_ keyboardHeight: CGFloat) -> Void)? = nil) {
+//        self.onKeyboardChange = onKeyboardChange
+//        registerEvents(navigation?.topViewController as? CSViewController)
+//    }
 
-    private func registerEvents(_ parent: CSViewController? = nil) {
-        parent.notNil { controller in
-            controller.observe(notification: UIResponder.keyboardDidShowNotification, callback: keyboardDidShow)
-            controller.observe(notification: UIResponder.keyboardDidHideNotification, callback: keyboardDidHide)
-        }.elseDo {
-            NotificationCenter.add(observer: UIResponder.keyboardDidShowNotification, using: keyboardDidShow)
-            NotificationCenter.add(observer: UIResponder.keyboardDidHideNotification, using: keyboardDidHide)
-        }
+    private func registerEvents(_ parent: CSViewController) {
+//        parent.notNil { controller in
+        parent.observe(notification: UIResponder.keyboardDidShowNotification, callback: keyboardDidShow)
+        parent.observe(notification: UIResponder.keyboardDidHideNotification, callback: keyboardDidHide)
+//        }.elseDo {
+//            NotificationCenter.add(observer: UIResponder.keyboardDidShowNotification, using: keyboardDidShow)
+//            NotificationCenter.add(observer: UIResponder.keyboardDidHideNotification, using: keyboardDidHide)
+//        }
     }
 
     private func keyboardDidShow(_ note: Notification) {
