@@ -29,7 +29,7 @@ public class CSNavigationHidingController: CSViewController {
 
     private func onKeyboardChange(keyboardHeight: CGFloat) {
         if !isAppearing { return }
-        if keyboardHeight > 0 && screen.isLandscape {
+        if keyboardHeight > 0 && window!.isLandscape {
             requestNavigationBarHidden()
         }
         else {
@@ -87,7 +87,7 @@ public class CSNavigationHidingController: CSViewController {
     }
 
     public func requestNavigationBarHidden() {
-        if screen.isUltraTall { return }
+        if window!.isUltraTall { return }
         lastDraggingContentOffset = nil
         if isNavigationBarHidden { return }
         shouldHide = false

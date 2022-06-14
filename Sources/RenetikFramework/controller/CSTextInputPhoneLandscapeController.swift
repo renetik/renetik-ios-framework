@@ -69,7 +69,7 @@ public class CSTextInputPhoneLandscapeController: CSViewController {
     override public func onViewDidLayout() { updateVisibility() }
 
     private func onKeyboardChange() {
-        if parentTextInput.responder.isFirstResponder && screen.isShort {
+        if parentTextInput.responder.isFirstResponder && window!.isShort {
             textView.text = parentTextInput.text
             changeAccessory(from: hasAccessory, to: textView, textInput: textView)
             window?.add(view: container).matchParent()
@@ -77,7 +77,7 @@ public class CSTextInputPhoneLandscapeController: CSViewController {
             runLayoutFunctions()
             return
         }
-        if textView.isFirstResponder && screen.isShort {
+        if textView.isFirstResponder && window!.isShort {
             container.fill(bottom: keyboardManager.keyboardHeight)
             runLayoutFunctions()
             return
@@ -86,7 +86,7 @@ public class CSTextInputPhoneLandscapeController: CSViewController {
     }
 
     private func updateVisibility() {
-        if !screen.isShort && isActive { hide() }
+        if !window!.isShort && isActive { hide() }
         if !textView.isFirstResponder && isActive { hide() }
     }
 

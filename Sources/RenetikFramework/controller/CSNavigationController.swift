@@ -73,13 +73,13 @@ open class CSNavigationController: UINavigationController, UINavigationBarDelega
 
     public func force(orientation: CSForcedOrientation) {
         forcedOrientation = orientation
-        orientationToReturnToFromForcedOrientation = UIDeviceOrientation(rawValue: screen.orientation.rawValue)
+        orientationToReturnToFromForcedOrientation = UIDeviceOrientation(rawValue: window!.orientation.rawValue)
         if (forcedOrientation == .portrait ||
-            forcedOrientation == CSForcedOrientation.none) && screen.isLandscape {
+            forcedOrientation == CSForcedOrientation.none) && window!.isLandscape {
             UIDevice.set(orientation: .portrait)
         }
         else if (forcedOrientation == .landscape ||
-            forcedOrientation == CSForcedOrientation.none) && screen.isPortrait {
+            forcedOrientation == CSForcedOrientation.none) && window!.isPortrait {
             UIDevice.set(orientation: .landscapeLeft)
         }
         orientationDidChangeNotificationObserverToken =
