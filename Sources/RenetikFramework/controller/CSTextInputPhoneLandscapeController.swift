@@ -59,10 +59,10 @@ public class CSTextInputPhoneLandscapeController: CSViewController {
 
     override public func onCreateLayout() {
         layout(container.add(view: actionButton).centeredVertical()) { [unowned self] in
-            $0.from(right: view.rightInset)
+            $0.from(right: view.safeRight)
         }
         layout(container.add(view: textView).matchParentHeight(margin: 5)) { [unowned self] in
-            $0.from(left: view.leftInset).fill(right: 5, from: actionButton)
+            $0.from(left: view.safeLeft).fill(right: 5, from: actionButton)
         }
     }
 
@@ -162,7 +162,7 @@ public class CSInputAccessoryDone: UIView {
         super.construct().width(400, height: 40).background(.white)
         add(view: hideKeyboardButton
                 .image(keyboardHide.template)) { [unowned self] in
-            $0.matchParentHeight().widthAsHeight().from(left: leftInset)
+            $0.matchParentHeight().widthAsHeight().from(left: safeLeft)
         }
         return self
     }
