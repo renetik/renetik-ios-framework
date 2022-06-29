@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/CSViewController" class="dashAnchor"></a>
+    <a title="CSViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">RenetikFramework Docs</a> (0% documented)</p>
+        <p class="header-right"><a href="https://github.com/renetik/renetik-ios-framework"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">RenetikFramework Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        CSViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CSConcurrentResponse.html">CSConcurrentResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSHttpResponseData.html">CSHttpResponseData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSImagePickerController.html">CSImagePickerController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@RenetikFramework@objc(cs)CSInputAccessoryDone">CSInputAccessoryDone</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSJsonArray.html">CSJsonArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSJsonObject.html">CSJsonObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSKeyboardObserver.html">CSKeyboardObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSKeyboardObserverController.html">CSKeyboardObserverController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSMainController.html">CSMainController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSMenuHeader.html">CSMenuHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSMenuItem.html">CSMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSMultiResponse.html">CSMultiResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSNameChooserController.html">CSNameChooserController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSNavigationController.html">CSNavigationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSNavigationHidingByKeyboardController.html">CSNavigationHidingByKeyboardController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSNavigationHidingController.html">CSNavigationHidingController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSPagerController.html">CSPagerController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSPickerController.html">CSPickerController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSResponse.html">CSResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSSearchBarController.html">CSSearchBarController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSSelectNameController.html">CSSelectNameController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSSequenceResponse.html">CSSequenceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSServerListData.html">CSServerListData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSServerMapData.html">CSServerMapData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSSingleRequestController.html">CSSingleRequestController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSTabBarPagerController.html">CSTabBarPagerController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSTextInputPhoneLandscapeController.html">CSTextInputPhoneLandscapeController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSViewController.html">CSViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CSForcedOrientation.html">CSForcedOrientation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/CSAnyProtocol.html">CSAnyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)UITextView">UITextView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CSHasInputAccessory.html">CSHasInputAccessory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CSHasTextInput.html">CSHasTextInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CSHasUIResponder.html">CSHasUIResponder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CSHttpResponseDataProtocol.html">CSHttpResponseDataProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CSImagePickerListener.html">CSImagePickerListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CSJsonArrayInterface.html">CSJsonArrayInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CSJsonObjectInterface.html">CSJsonObjectInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:16RenetikFramework11CSPagerPageP">CSPagerPage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CSResponseController.html">CSResponseController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CSResponseProtocol.html">CSResponseProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HasPages.html">HasPages</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:16RenetikFramework19CSImagePickerParenta">CSImagePickerParent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:16RenetikFramework13CSNameRowTypea">CSNameRowType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:16RenetikFramework27CSTabBarPagerControllerItema">CSTabBarPagerControllerItem</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CSViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">CSViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC4viewSo6UIViewCyF"></a>
+                    <a name="//apple_ref/swift/Method/view()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC4viewSo6UIViewCyF">view()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">view</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC24eventOrientationChanging0A5Event7CSEventCyytGvp"></a>
+                    <a name="//apple_ref/swift/Property/eventOrientationChanging" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC24eventOrientationChanging0A5Event7CSEventCyytGvp">eventOrientationChanging</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eventOrientationChanging</span><span class="p">:</span> <span class="kt">CSEvent</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC23eventOrientationChanged0A5Event7CSEventCyytGvp"></a>
+                    <a name="//apple_ref/swift/Property/eventOrientationChanged" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC23eventOrientationChanged0A5Event7CSEventCyytGvp">eventOrientationChanged</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eventOrientationChanged</span><span class="p">:</span> <span class="kt">CSEvent</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC15eventDismissing0A5Event7CSEventCyytGvp"></a>
+                    <a name="//apple_ref/swift/Property/eventDismissing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC15eventDismissing0A5Event7CSEventCyytGvp">eventDismissing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eventDismissing</span><span class="p">:</span> <span class="kt">CSEvent</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC14eventDidAppear0A5Event7CSEventCyytGvp"></a>
+                    <a name="//apple_ref/swift/Property/eventDidAppear" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC14eventDidAppear0A5Event7CSEventCyytGvp">eventDidAppear</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eventDidAppear</span><span class="p">:</span> <span class="kt">CSEvent</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC23eventDidLayoutFirstTime0A5Event7CSEventCyytGvp"></a>
+                    <a name="//apple_ref/swift/Property/eventDidLayoutFirstTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC23eventDidLayoutFirstTime0A5Event7CSEventCyytGvp">eventDidLayoutFirstTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eventDidLayoutFirstTime</span><span class="p">:</span> <span class="kt">CSEvent</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC15eventWillAppear0A5Event7CSEventCyytGvp"></a>
+                    <a name="//apple_ref/swift/Property/eventWillAppear" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC15eventWillAppear0A5Event7CSEventCyytGvp">eventWillAppear</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eventWillAppear</span><span class="p">:</span> <span class="kt">CSEvent</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC24eventWillAppearFirstTime0A5Event7CSEventCyytGvp"></a>
+                    <a name="//apple_ref/swift/Property/eventWillAppearFirstTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC24eventWillAppearFirstTime0A5Event7CSEventCyytGvp">eventWillAppearFirstTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eventWillAppearFirstTime</span><span class="p">:</span> <span class="kt">CSEvent</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC23eventDidAppearFirstTime0A5Event7CSEventCyytGvp"></a>
+                    <a name="//apple_ref/swift/Property/eventDidAppearFirstTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC23eventDidAppearFirstTime0A5Event7CSEventCyytGvp">eventDidAppearFirstTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eventDidAppearFirstTime</span><span class="p">:</span> <span class="kt">CSEvent</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC11isAppearingSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isAppearing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC11isAppearingSbvp">isAppearing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">isAppearing</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC9isShowingSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isShowing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC9isShowingSbvp">isShowing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isShowing</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC9isVisibleSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isVisible" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC9isVisibleSbvp">isVisible</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isVisible</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC11isDismissedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isDismissed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC11isDismissedSbvp">isDismissed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">isDismissed</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC06parentD0So06UIViewD0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/parentController" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC06parentD0So06UIViewD0CSgvp">parentController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">parentController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC9constructyACXDSo06UIViewD0CF"></a>
+                    <a name="//apple_ref/swift/Method/construct(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC9constructyACXDSo06UIViewD0CF">construct(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">construct</span><span class="p">(</span><span class="n">_</span> <span class="nv">parent</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC10asViewLessACXDyF"></a>
+                    <a name="//apple_ref/swift/Method/asViewLess()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC10asViewLessACXDyF">asViewLess()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">asViewLess</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RenetikFramework@objc(cs)CSViewController(im)loadView"></a>
+                    <a name="//apple_ref/swift/Method/loadView()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RenetikFramework@objc(cs)CSViewController(im)loadView">loadView()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">loadView</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC13onViewDidLoadyyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC13onViewDidLoadyyF">onViewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewWillAppear:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillAppear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewWillAppear:">viewWillAppear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">viewWillAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC16onViewWillAppearyyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewWillAppear()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC16onViewWillAppearyyF">onViewWillAppear()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewWillAppear</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC23onViewWillAppearUpdated8functionyyyc_tF"></a>
+                    <a name="//apple_ref/swift/Method/onViewWillAppearUpdated(function:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC23onViewWillAppearUpdated8functionyyyc_tF">onViewWillAppearUpdated(function:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">onViewWillAppearUpdated</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC25onViewWillAppearFirstTimeyyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewWillAppearFirstTime()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC25onViewWillAppearFirstTimeyyF">onViewWillAppearFirstTime()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewWillAppearFirstTime</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC029onViewWillAppearFromPresentedD0yyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewWillAppearFromPresentedController()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC029onViewWillAppearFromPresentedD0yyF">onViewWillAppearFromPresentedController()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewWillAppearFromPresentedController</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewDidLayoutSubviews"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLayoutSubviews()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewDidLayoutSubviews">viewDidLayoutSubviews()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">viewDidLayoutSubviews</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC24onViewDidLayoutFirstTimeyyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewDidLayoutFirstTime()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC24onViewDidLayoutFirstTimeyyF">onViewDidLayoutFirstTime()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewDidLayoutFirstTime</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC14onCreateLayoutyyF"></a>
+                    <a name="//apple_ref/swift/Method/onCreateLayout()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC14onCreateLayoutyyF">onCreateLayout()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onCreateLayout</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC15onLayoutCreatedyyF"></a>
+                    <a name="//apple_ref/swift/Method/onLayoutCreated()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC15onLayoutCreatedyyF">onLayoutCreated()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onLayoutCreated</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC14onUpdateLayoutyyF"></a>
+                    <a name="//apple_ref/swift/Method/onUpdateLayout()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC14onUpdateLayoutyyF">onUpdateLayout()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onUpdateLayout</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC15onViewDidLayoutyyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewDidLayout()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC15onViewDidLayoutyyF">onViewDidLayout()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewDidLayout</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewDidAppear:"></a>
+                    <a name="//apple_ref/swift/Method/viewDidAppear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewDidAppear:">viewDidAppear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">viewDidAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC15onViewDidAppearyyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewDidAppear()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC15onViewDidAppearyyF">onViewDidAppear()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewDidAppear</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC24onViewDidAppearFirstTimeyyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewDidAppearFirstTime()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC24onViewDidAppearFirstTimeyyF">onViewDidAppearFirstTime()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewDidAppearFirstTime</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC028onViewDidAppearFromPresentedD0yyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewDidAppearFromPresentedController()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC028onViewDidAppearFromPresentedD0yyF">onViewDidAppearFromPresentedController()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewDidAppearFromPresentedController</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewWillDisappear:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillDisappear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewWillDisappear:">viewWillDisappear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">viewWillDisappear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC19onViewWillDisappearyyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewWillDisappear()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC19onViewWillDisappearyyF">onViewWillDisappear()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewWillDisappear</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewDidDisappear:"></a>
+                    <a name="//apple_ref/swift/Method/viewDidDisappear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewDidDisappear:">viewDidDisappear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">viewDidDisappear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RenetikFramework@objc(cs)CSViewController(im)willMoveToParentViewController:"></a>
+                    <a name="//apple_ref/swift/Method/willMove(toParent:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RenetikFramework@objc(cs)CSViewController(im)willMoveToParentViewController:">willMove(toParent:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">willMove</span><span class="p">(</span><span class="n">toParent</span> <span class="nv">parent</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RenetikFramework@objc(cs)CSViewController(im)didMoveToParentViewController:"></a>
+                    <a name="//apple_ref/swift/Method/didMove(toParent:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RenetikFramework@objc(cs)CSViewController(im)didMoveToParentViewController:">didMove(toParent:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">didMove</span><span class="p">(</span><span class="n">toParent</span> <span class="nv">parent</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC18onViewDidDisappearyyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewDidDisappear()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC18onViewDidDisappearyyF">onViewDidDisappear()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewDidDisappear</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC16onViewPushedOveryyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewPushedOver()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC16onViewPushedOveryyF">onViewPushedOver()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewPushedOver</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC16onViewDismissingyyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewDismissing()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC16onViewDismissingyyF">onViewDismissing()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewDismissing</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC23onViewVisibilityChangedyySbF"></a>
+                    <a name="//apple_ref/swift/Method/onViewVisibilityChanged(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC23onViewVisibilityChangedyySbF">onViewVisibilityChanged(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewVisibilityChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">visible</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC13onViewShowingyyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewShowing()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC13onViewShowingyyF">onViewShowing()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewShowing</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC22onViewShowingFirstTimeyyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewShowingFirstTime()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC22onViewShowingFirstTimeyyF">onViewShowingFirstTime()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewShowingFirstTime</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC12onViewHidingyyF"></a>
+                    <a name="//apple_ref/swift/Method/onViewHiding()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC12onViewHidingyyF">onViewHiding()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewHiding</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewWillTransitionToSize:withTransitionCoordinator:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillTransition(to:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RenetikFramework@objc(cs)CSViewController(im)viewWillTransitionToSize:withTransitionCoordinator:">viewWillTransition(to:<wbr>with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">viewWillTransition</span><span class="p">(</span><span class="n">to</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="n">with</span> <span class="nv">coordinator</span><span class="p">:</span> <span class="kt">UIViewControllerTransitionCoordinator</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC20onViewWillTransition2to_ySo6CGSizeV_So06UIViewdH11Coordinator_ptF"></a>
+                    <a name="//apple_ref/swift/Method/onViewWillTransition(to:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC20onViewWillTransition2to_ySo6CGSizeV_So06UIViewdH11Coordinator_ptF">onViewWillTransition(to:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewWillTransition</span><span class="p">(</span><span class="n">to</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="n">_</span> <span class="nv">coordinator</span><span class="p">:</span> <span class="kt">UIViewControllerTransitionCoordinator</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC19onViewDidTransition2to_ySo6CGSizeV_So06UIViewdH18CoordinatorContext_ptF"></a>
+                    <a name="//apple_ref/swift/Method/onViewDidTransition(to:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC19onViewDidTransition2to_ySo6CGSizeV_So06UIViewdH18CoordinatorContext_ptF">onViewDidTransition(to:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onViewDidTransition</span><span class="p">(</span><span class="n">to</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="n">_</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">UIViewControllerTransitionCoordinatorContext</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC7observe12notification8callbackySo18NSNotificationNamea_y10Foundation12NotificationVctF"></a>
+                    <a name="//apple_ref/swift/Method/observe(notification:callback:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC7observe12notification8callbackySo18NSNotificationNamea_y10Foundation12NotificationVctF">observe(notification:<wbr>callback:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">observe</span><span class="p">(</span><span class="n">notification</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">NSNotification</span><span class="o">.</span><span class="kt">Name</span><span class="p">,</span> <span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Notification</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC8register5eventxx_t0A5Event14CSRegistrationCRbzlF"></a>
+                    <a name="//apple_ref/swift/Method/register(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC8register5eventxx_t0A5Event14CSRegistrationCRbzlF">register(event:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">register</span><span class="o">&lt;</span><span class="kt">EventRegistration</span><span class="o">&gt;</span><span class="p">(</span><span class="n">event</span> <span class="nv">registration</span><span class="p">:</span> <span class="kt">EventRegistration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventRegistration</span> <span class="k">where</span> <span class="kt">EventRegistration</span> <span class="p">:</span> <span class="kt">CSRegistration</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RenetikFramework@objc(cs)CSViewController(py)shouldAutorotate"></a>
+                    <a name="//apple_ref/swift/Property/shouldAutorotate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RenetikFramework@objc(cs)CSViewController(py)shouldAutorotate">shouldAutorotate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">shouldAutorotate</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC21clearShouldAutorotateyyF"></a>
+                    <a name="//apple_ref/swift/Method/clearShouldAutorotate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC21clearShouldAutorotateyyF">clearShouldAutorotate()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">clearShouldAutorotate</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RenetikFramework@objc(cs)CSViewController(im)traitCollectionDidChange:"></a>
+                    <a name="//apple_ref/swift/Method/traitCollectionDidChange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RenetikFramework@objc(cs)CSViewController(im)traitCollectionDidChange:">traitCollectionDidChange(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">traitCollectionDidChange</span><span class="p">(</span><span class="n">_</span> <span class="nv">previousTraitCollection</span><span class="p">:</span> <span class="kt">UITraitCollection</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC18onDisplayChangedTo8darkModeySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/onDisplayChangedTo(darkMode:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC18onDisplayChangedTo8darkModeySb_tF">onDisplayChangedTo(darkMode:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onDisplayChangedTo</span><span class="p">(</span><span class="nv">darkMode</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC6layout8functionyyyc_tF"></a>
+                    <a name="//apple_ref/swift/Method/layout(function:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC6layout8functionyyyc_tF">layout(function:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">layout</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">Func</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC6layout_8functionxx_yxctSo6UIViewCRbzlF"></a>
+                    <a name="//apple_ref/swift/Method/layout(_:function:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC6layout_8functionxx_yxctSo6UIViewCRbzlF">layout(_:<wbr>function:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">layout</span><span class="o">&lt;</span><span class="kt">View</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">View</span><span class="p">,</span> <span class="nv">function</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">View</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">View</span> <span class="k">where</span> <span class="kt">View</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC18runLayoutFunctionsyyF"></a>
+                    <a name="//apple_ref/swift/Method/runLayoutFunctions()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC18runLayoutFunctionsyyF">runLayoutFunctions()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">runLayoutFunctions</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC4show2inACXDSo06UIViewD0C_tF"></a>
+                    <a name="//apple_ref/swift/Method/show(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC4show2inACXDSo06UIViewD0C_tF">show(in:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">show</span><span class="p">(</span><span class="k">in</span> <span class="nv">parent</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16RenetikFramework16CSViewControllerC6hideInACXDyF"></a>
+                    <a name="//apple_ref/swift/Method/hideIn()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16RenetikFramework16CSViewControllerC6hideInACXDyF">hideIn()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">hideIn</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://renetik.github.io" target="_blank" rel="external noopener">Renetik</a>. All rights reserved. (Last updated: 2022-06-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
