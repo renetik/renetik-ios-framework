@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RenetikCore",
+        "repositoryURL": "https://github.com/renetik/renetik-ios-core",
+        "state": {
+          "branch": "master",
+          "revision": "2650ac352dfbfa414d941f4bb7c6094de01a5bf1",
+          "version": null
+        }
+      },
+      {
+        "package": "RenetikEvent",
+        "repositoryURL": "https://github.com/renetik/renetik-ios-event",
+        "state": {
+          "branch": "master",
+          "revision": "9055c4a69f573c59e3afe607934ec6ac26c6a05a",
+          "version": null
+        }
+      },
+      {
+        "package": "RenetikLayout",
+        "repositoryURL": "https://github.com/renetik/renetik-ios-layout",
+        "state": {
+          "branch": "master",
+          "revision": "238b53bc6ff19e46aa6ca4a9c187a5718cb042c0",
+          "version": null
+        }
+      },
+      {
+        "package": "RenetikUI",
+        "repositoryURL": "https://github.com/renetik/renetik-ios-ui",
+        "state": {
+          "branch": "master",
+          "revision": "6e6f53f58d83dc288c0f47b2205ddc959be285da",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
