@@ -3,7 +3,7 @@
 # Renetik iOS - Framework
 #### [https://github.com/renetik/renetik-ios-core](https://github.com/renetik/renetik-ios-core/) ➜ [Documentation](https://renetik.github.io/renetik-ios-core/)
 #### [https://github.com/renetik/renetik-ios-event](https://github.com/renetik/renetik-ios-event/) ➜ [Documentation](https://renetik.github.io/renetik-ios-event/)
-#### [https://github.com/renetik/renetik-ios-ui](https://github.com/renetik/renetik-ios-ui/) ➜ [Documentation](https://renetik.github.io/renetik-ios-frauimework/)
+#### [https://github.com/renetik/renetik-ios-ui](https://github.com/renetik/renetik-ios-ui/) ➜ [Documentation](https://renetik.github.io/renetik-ios-ui/)
 #### [https://github.com/renetik/renetik-ios-layout](https://github.com/renetik/renetik-ios-layout/) ➜ [Documentation](https://renetik.github.io/renetik-ios-layout/)
 #### [https://github.com/renetik/renetik-ios-framework](https://github.com/renetik/renetik-ios-framework/) ➜ [Documentation](https://renetik.github.io/renetik-ios-framework/)
 Framework to enjoy, improve and speed up your application development while writing readable code.
